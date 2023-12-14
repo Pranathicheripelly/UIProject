@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UImaster.master.cs" Inherits="UIProject.UImaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="Menu2" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Image ID="Image3" runat="server" Height="147px" ImageUrl="~/Content/Rainbow.png" Width="424px" />
+        </p>
+    </form>
+</body>
+</html>
